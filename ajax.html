@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AJAX</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="ajax.js"></script>
+    <style type="text/css">
+    	.box{
+    		width: 200px;
+        height: auto;
+        border:1px solid black;
+        padding: 10px 10px 10px 10px;
+        display: inline-block;
+        text-align: center;
+        font-size: 25px;
+        background: #f3f3f3f3;
+        margin-top: 20px;
+    	}
+      .flotante{
+        float: right;
+        width: 300px;
+        height: auto;
+        border:1px solid black;
+        padding: 10px 10px 10px 10px;
+      }
+    </style>
+</head>
+
+
+<body>
+  <center><h1>AJAX JQuery</h1></center>
+  
+
+  <div id="box" class="box">
+    <p>Lista de usuarios externos </p>
+  </div>
+  
+  <div class="flotante">
+    <h1>Añadir un nuevo usuario</h1>
+    <form id="form" action="https://reqres.in/api/users" method="POST">
+        <span>Name</span>
+        <input type="text" name="name" id="campo_name"><br/>
+        <span>Job</span>
+        <input type="text" name="job" id="campo_job">
+        <input type="submit" name="submit" id="btnsubmit" value="submit">
+    </form>
+  </div>
+
+
+</body>
+</html>
